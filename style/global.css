@@ -10,7 +10,6 @@ header {
   background-color: var(--primary-purple);
   display: flex;
   align-items: center;
-  margin-bottom: 3.2rem;
 }
 
 .logo_container {
@@ -38,8 +37,8 @@ header {
 }
 
 main {
-  min-height: calc(100vh - 18rem);
-  max-width: 96rem;
+  min-height: calc(100vh - 16rem);
+  max-width: 100rem;
   margin: auto;
 }
 
@@ -53,10 +52,23 @@ main {
   object-fit: cover;
 }
 
+.primary_button {
+  border-radius: 5px;
+  color: var(--white);
+  background-color: var(--tertiary-purple);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+}
+.primary_button img {
+  height: 60%;
+}
+
 footer {
   height: 8rem;
   padding: 2rem;
-  margin-top: 4rem;
   background-color: var(--primary-purple);
 }
 
