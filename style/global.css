@@ -14,10 +14,12 @@ header {
   background-color: var(--primary-purple);
   display: flex;
   align-items: center;
+  /* gap: 10vw; */
+  justify-content: space-evenly;
 }
 
 .logo_container {
-  background-color: var(--secondary-purple);
+  /* background-color: var(--secondary-purple); */
   height: 100%;
   display: flex;
   justify-content: center;
@@ -26,18 +28,48 @@ header {
 }
 
 .logo_container img {
-  height: 4rem;
+  width: 10rem;
+  transition: 0.2s ease-in-out;
+}
+
+.logo_container img:hover {
+  scale: 1.05;
+  cursor: pointer;
 }
 
 #search_input {
   width: 56rem;
   height: 4rem;
-  margin: auto;
+  /* margin: auto; */
   padding: 0.2rem 2rem;
   font-size: 1.6rem;
-  border-radius: 4px;
+  outline: none;
+  border-radius: 8px;
   color: var(--gray);
   background-color: var(--secondary-purple);
+}
+
+.buttons_container {
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+  flex-direction: row;
+
+  font-size: 1.5rem;
+}
+
+.buttons_container > a {
+  color: #FFFFFF;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  cursor: initial;
+  transition: 0.2s ease-in-out;
+}
+
+.buttons_container > a:hover {
+  scale: 1.1;
+  cursor: pointer;
 }
 
 main {
