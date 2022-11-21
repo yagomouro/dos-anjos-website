@@ -123,12 +123,18 @@
   }
 
   .main_image .image_container {
-    min-width: 56rem;
+    min-width: auto;
     height: 56rem;
     cursor: zoom-in;
   }
 
   .infos {
     width: 100%;
+  }
+}
+
+@media screen and (width <= 599px) {
+  .main_image .image_container {
+    height: 40rem;
   }
 }
