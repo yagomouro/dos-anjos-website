@@ -42,5 +42,43 @@
 
 .products h2 {
   font-size: 2rem;
+  font-weight: 600;
   margin-bottom: 3rem;
+}
+
+@media screen and (width <= 450px) {
+  .hero {
+    flex-direction: column;
+    height: max-content;
+  }
+  .hero_text {
+    width: 100%;
+    gap: 1rem;
+  }
+  .hero_text h1 {
+    font-size: 1.6rem;
+  }
+  .hero_image {
+    height: 12rem;
+    width: 100%;
+  }
+}
+@media screen and (451px <= width <= 599px) {
+  .hero {
+    flex-direction: row;
+    height: 16rem;
+  }
+
+  .hero_text h1 {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (600px <= width <= 799px) {
+  .hero {
+    height: 18rem;
+  }
+
+  .hero_text h1 {
+    font-size: 2rem;
+  }
 }
