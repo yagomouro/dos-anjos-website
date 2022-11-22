@@ -14,12 +14,11 @@ header {
   background-color: var(--primary-purple);
   display: flex;
   align-items: center;
-  /* gap: 10vw; */
+  padding: 1rem;
   justify-content: space-evenly;
 }
 
 .logo_container {
-  /* background-color: var(--secondary-purple); */
   height: 100%;
   display: flex;
   justify-content: center;
@@ -39,8 +38,8 @@ header {
 
 #search_input {
   width: 56rem;
+  min-width: 18rem;
   height: 4rem;
-  /* margin: auto; */
   padding: 0.2rem 2rem;
   font-size: 1.6rem;
   outline: none;
@@ -53,20 +52,18 @@ header {
 
 #search_input:focus {
   outline: 0.2rem solid var(--white);
-  /* border: 0.2rem solid var(--primary-purple); */
 }
 
 .buttons_container {
   display: flex;
-  gap: 5rem;
+  gap: 6rem;
   align-items: center;
   flex-direction: row;
-
   font-size: 1.5rem;
 }
 
-.buttons_container {
-  cursor: pointer;
+.buttons_container img {
+  height: 4rem;
 }
 
 .buttons_container a {
@@ -145,24 +142,50 @@ footer {
   html {
     font-size: 50%;
   }
+
+  header {
+    padding: 2rem 1rem;
+  }
+
+  .logo_container img {
+    height: 2rem;
+    width: 4rem;
+  }
+
+  .buttons_container {
+    gap: 2rem;
+    font-size: 1.4rem;
+  }
+
+  .buttons_container img {
+    height: 2.6rem;
+  }
 }
+
+@media screen and (width <= 1100px) {
+  .logo_container img {
+    width: 16rem;
+  }
+}
+
 @media screen and (width <= 799px) {
   header {
     height: 4rem;
+    gap: 1rem;
   }
 
-  header #search_input {
+  #search_input {
     width: 100%;
     height: 3rem;
     font-size: 1.2rem;
-    margin: 0 2rem;
   }
 
   .logo_container {
-    padding: 0 1rem;
+    padding: 0;
   }
 
   .logo_container img {
     height: 3rem;
+    width: 12rem;
   }
 }

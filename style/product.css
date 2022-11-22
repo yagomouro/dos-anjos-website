@@ -195,10 +195,36 @@ h1 {
   .infos {
     width: 100%;
   }
+
+  .buttons_container {
+    gap: 2rem;
+    margin-left: 1rem;
+  }
+
+  .buttons_container img {
+    height: 3rem;
+  }
 }
 
 @media screen and (width <= 599px) {
+  .product_info {
+    gap: 2rem;
+  }
   .main_image .image_container {
     height: 40rem;
+  }
+
+  .other_images .image_container {
+    height: 8rem;
+  }
+}
+
+@media screen and (width <= 399px) {
+  .other_images {
+    gap: 1rem;
+  }
+
+  .other_images .image_container {
+    height: 6rem;
   }
 }
