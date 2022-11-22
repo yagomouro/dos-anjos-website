@@ -177,6 +177,15 @@ footer {
   .logo_container img {
     width: 16rem;
   }
+
+  .buttons_container {
+    gap: 2rem;
+    margin-left: 1rem;
+  }
+
+  .buttons_container img {
+    height: 3rem;
+  }
 }
 
 @media screen and (width <= 799px) {
