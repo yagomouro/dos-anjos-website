@@ -6,7 +6,7 @@
   gap: 3.2rem;
   margin-top: 3.2rem;
   margin-bottom: 6.4rem;
-  height: 42rem;
+  height: 55rem;
   justify-content: space-between;
 }
 
@@ -39,8 +39,27 @@
   gap: 2.4rem;
 }
 
+.brand_info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.brand_info h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.brand_info h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
 .infos h2 {
   font-size: 2rem;
+  font-weight: 600;
+}
+.infos h3 {
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
@@ -71,12 +90,12 @@
   text-align: justify;
 }
 
-.tamanhos {
+.sizes {
   display: flex;
   gap: 1rem;
 }
 
-.tamanho {
+.size {
   width: 4rem;
   height: 4rem;
   background-color: var(--dark-purple);
@@ -84,18 +103,63 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.2s ease-in-out;
 }
 
-.tamanho span {
+.size:hover {
+  scale: 1.05;
+  background-color: var(--tertiary-purple);
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+.size span {
   font-weight: 600;
   font-size: 1.2rem;
   color: var(--white);
   text-align: center;
 }
 
+.cep_container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.submit_container {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+}
+
+.submit_container input {
+  width: 50%;
+  height: 3.5rem;
+  outline: none;
+  padding: 1rem;
+}
+
+.submit_container input:focus {
+  outline: 3px solid var(--tertiary-purple);
+  border-radius: 4px;
+}
+
+.submit_container button {
+  width: 50%;
+  border-radius: 8px;
+}
+
+.submit_container button:hover {
+  background-color: var(--light-gray);
+  cursor: pointer;
+}
+
 .infos .primary_button {
   margin-top: auto;
-  height: 4rem;
+  height: 5rem;
   font-size: 1.6rem;
 }
 
