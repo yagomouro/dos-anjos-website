@@ -116,26 +116,33 @@ main {
 }
 
 footer {
-  height: 8rem;
   padding: 2rem;
+  min-height: max-content;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+
   background-color: var(--primary-purple);
 }
 
 .rights_container {
-  /* margin: auto; */
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 1.6rem;
 }
 
 .rights_container img {
   height: 4rem;
 }
 
-.rights_container span {
+.rights_container span,
+.rights_container a {
   color: var(--white);
   font-size: 1.6rem;
+}
+.rights_container a {
+  font-weight: 600;
 }
 
 @media (width <= 600px) {
@@ -159,6 +166,10 @@ footer {
 
   .buttons_container img {
     height: 2.6rem;
+  }
+  footer {
+    flex-direction: column;
+    gap: 3rem;
   }
 }
 
