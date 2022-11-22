@@ -44,9 +44,16 @@ header {
   padding: 0.2rem 2rem;
   font-size: 1.6rem;
   outline: none;
+  border: none;
   border-radius: 8px;
   color: var(--gray);
   background-color: var(--secondary-purple);
+  transition: ease-in-out 120ms;
+}
+
+#search_input:focus {
+  outline: 0.2rem solid var(--white);
+  /* border: 0.2rem solid var(--primary-purple); */
 }
 
 .buttons_container {
@@ -105,6 +112,10 @@ main {
 }
 .primary_button img {
   height: 60%;
+}
+
+.primary_button:hover {
+  background-color: var(--dark-purple);
 }
 
 footer {
