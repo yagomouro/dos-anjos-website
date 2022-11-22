@@ -26,12 +26,6 @@ q:after {
   content: '';
   content: none;
 }
-a:active {
-  color: unset;
-}
-a:hover {
-  color: unset;
-}
 a {
   color: unset;
 }
